@@ -150,7 +150,7 @@ let root = {
             return new Error("PasswordValid not valid");         
         }
 
-        const token = await jwt.sign({ id: user.id, name: user.name, email: user.email}, process.env.JWT_SECRET);
+        const token = await jwt.sign({ id: user.id, name: user.name, email: user.email}, "asdfasdfasdf");
         await updateToken(token, email);
 
         return token;

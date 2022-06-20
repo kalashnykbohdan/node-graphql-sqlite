@@ -65,7 +65,7 @@ const loggingMiddleware = async (req) => {
     const token = req.headers.authorization;
     if(token){
         try{
-            req.user = await jwt.verify(token, process.env.JWT_SECRET);
+            req.user = await jwt.verify(token, "asdfasdfasdf");
         } catch(err){
             req.user = false;
         }
