@@ -155,6 +155,16 @@ let root = {
 
         return token;
 
+    },
+    logout: async ({}, user) => {
+
+        const token = null;
+
+        updateToken(token, user.email);
+
+        const info = "logout user"
+        
+        return info;
     }
 };
 

@@ -43,7 +43,7 @@ const schema = buildSchema(`
     type Mutation {
         registr(name: String, email: String, password: String): ReturnUserRegistr
         login(email: String, password: String): String
-        logout: String
+        logout(email: String): String
     }
 `)
 
